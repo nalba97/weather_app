@@ -1,8 +1,8 @@
 import requests
 import pandas as pd
 
-api_key = ""
-city = 'Culver City'
+api_key = input("Enter API key: ")
+city = input('Enter City: ')
 base_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
 
 response = requests.get(base_url)
